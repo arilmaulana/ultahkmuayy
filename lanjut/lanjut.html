@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy Birthday!</title>
+    <!-- Link to Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #ffe5e9;
+        margin: 0;
+        font-family: "Arial", sans-serif;
+        flex-direction: column;
+      }
+      .header-area {
+        text-align: center;
+        margin-bottom: 20px;
+        width: 100%;
+        padding: 20px;
+      }
+      .btn-custom {
+        padding: 10px 20px;
+        background-color: #ff6b6b;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 1.1rem;
+        text-align: center;
+        text-decoration: none;
+      }
+      .btn-custom:hover {
+        background-color: #ff4a4a;
+      }
+      .whatsapp-btn {
+        padding: 10px 20px;
+        background-color: #25d366;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        margin-top: 20px;
+        cursor: pointer;
+        font-size: 1.1rem;
+        text-align: center;
+        text-decoration: none;
+      }
+      .whatsapp-btn:hover {
+        background-color: #1ebe5b;
+      }
+      .birthday-card {
+        position: relative;
+        background-color: white;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        width: 90%;
+        text-align: center;
+        overflow: hidden;
+      }
+      h1 {
+        color: #ff6b6b;
+        font-size: 2rem;
+      }
+      p {
+        color: #333;
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+      .heart {
+        color: red;
+        font-size: 1.5rem;
+      }
+      .footer-text {
+        margin-top: 20px;
+        color: #666;
+      }
+      .footer-text i {
+        color: #007bff;
+      }
+      /* Hiasan pinggir yang bergerak */
+      .decor {
+        position: absolute;
+        width: 100%;
+        height: 10px;
+        background: repeating-linear-gradient(45deg, #ff6b6b, #ff6b6b 10px, #fff 10px, #fff 20px);
+        top: -10px;
+        animation: move 5s linear infinite;
+      }
+      .decor-bottom {
+        bottom: -10px;
+        top: auto;
+        animation-direction: reverse;
+      }
+      @keyframes move {
+        0% {
+          background-position: 0 0;
+        }
+        100% {
+          background-position: 100px 0;
+        }
+      }
+      /* Topi ulang tahun di atas kartu */
+      .party-hat {
+        position: absolute;
+        top: -50px;
+        left: calc(50% - 30px);
+        width: 60px;
+        height: 60px;
+        background-color: #ff6b6b;
+        clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+        border: 3px solid #fff;
+      }
+      .hat-ball {
+        position: absolute;
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 15px;
+        height: 15px;
+        background-color: #fff;
+        border-radius: 50%;
+      }
+      /* Media query untuk layar lebih kecil */
+      @media (max-width: 576px) {
+        h1 {
+          font-size: 1.5rem;
+        }
+        p {
+          font-size: 0.9rem;
+        }
+        .heart {
+          font-size: 1.3rem;
+        }
+        .party-hat {
+          width: 40px;
+          height: 40px;
+        }
+        .hat-ball {
+          width: 10px;
+          height: 10px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Tombol di atas, di area pink -->
+    <div class="header-area">
+      <a href="index.html" class="btn-custom">Kembali Ke Awal</a>
+    </div>
+
+    <div class="birthday-card">
+      <div class="party-hat">
+        <div class="hat-ball"></div>
+      </div>
+      <h1>Happy Birthday, Sayang!</h1>
+      <p>Selamat ulang tahun ya! 🎉 Semoga di tahun ini kamu semakin bahagia, sukses, dan semua harapanmu bisa terwujud.</p>
+      <p>Jangan lupa salat nya jangan tinggal, jaga kesehatan, istirahat yang cukup, dan makan yang teratur, ya. Aril mau kamu sehat dan senyum selalu.</p>
+      <p class="heart">&#10084; LOVE YOU SAYANG &#10084;</p>
+      <p class="footer-text"><i>Salam hangat, Aril Maulana</i></p>
+      <div class="decor"></div>
+      <div class="decor decor-bottom"></div>
+    </div>
+
+    <!-- Tombol WhatsApp -->
+
+    <!-- Link to Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
